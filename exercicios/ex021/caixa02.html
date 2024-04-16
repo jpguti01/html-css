@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        
+        /*a TAG DISPLAY serve para colocar qualquer tag tanto em box-level como em inline-level entre outras...*/ 
+
+        h1 { /*box-level*/
+           background-color: lightgray;
+            height: 300px;
+            width: 300px;
+           
+            border: 10px solid darkslategray;
+            
+
+            padding: 10px 10px 10px 10px;
+
+           
+            margin: 20px auto 40px auto;
+            /*Usar sentido do relógio*/
+
+           
+            outline: 10px dashed seagreen;
+
+        }
+            /*border padding margin outline estão em short-hand e são as propriedades anatomicas do box*/
+
+        a { /*inline-level*/
+            
+            display: block;
+
+            border: 10px solid red;
+            
+           padding: 10px 10px 10px 10px;
+
+            margin: auto;
+           /*Se quiser deixar a "caixa" no meio é praticamente obrigatório o uso da tag - MARGIN: AUTO.*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box level</h1>
+    <p>Parágrafos também são exemplos de box-levl, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
