@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title> 
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+            /* Medidas Absolutas
+            cm, mm, in, px, pt, pc
+           px= pixel; in= polegada; pt= ponto; pc= paica
+
+            Medidas Relativas
+            em, ex, rem. vw, vh, %
+            em= tamanho atual da fonte; ex= tamanho da font X; 
+            rem= fonte configurada ao body tipo o em; 
+            vw= tamanho de tela do dispositivo em largura;
+            vh= tamanho de tela do dispositivo em altura;
+            */
+            font-size: 1em;
+           /*usando a tag FONT-SIZE o melhor o uso do EM ou PX*/
+           
+            /* 16px geralmente = 1em = um site com tamanho original*/
+            
+
+            /* na tag FONT-WEIGHT existem 4 tipos para se usar: LIGHTER;NORMAL; BOLD; BOLDER. Também existe o tamanho em numeros,weight= peso da fonte*/
+            font-style: italic;
+            
+           
+        }
+       
+        h1{ 
+            /* shorthand font*/
+            /*1 font-style; 2 font-weight; 3 font-size; 4 font-family*/
+            /*font-style: italic;
+              font-weight: bolder;
+              font-size: 3em;
+              font-family: 'work Sans',    sans-serif;*/
+            font: italic bolder 3em 'work Sans, sans-serif';
+        }
+
+        h2{
+            font: bold 2em 'work Sans';
+        }
+    </style>
+    <!--safe combinations são fontes que ira ter em todos os dispositivos como: serif; san-serif; entre outras-->
+    <!--a tag FONT-FAMILY serve para escolher o formato do grupo da letra-->
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ratione repudiandae dicta tempora quisquam vero quae laborum explicabo incidunt sed blanditiis accusantium? Nisi consequatur modi expedita assumenda! Doloribus, eum dolorum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, ipsum nisi. Pariatur ut ex magni, quo repellendus repudiandae laborum, quidem tenetur voluptatum sed eius nam dolor facere delectus, laboriosam atque!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequuntur dolor enim nihil dolorum, quas voluptatibus vero, dignissimos laboriosam magnam ullam quam laborum provident. Sit expedita hic sunt veniam enim.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptate temporibus vel accusamus dicta deserunt excepturi eum reprehenderit voluptatibus, similique suscipit nemo fuga, quaerat corrupti explicabo accusantium fugit hic nostrum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim soluta, incidunt illo libero tempora obcaecati consequatur doloremque molestias. Magni quam voluptatum quisquam iste omnis cupiditate hic possimus numquam dolor eveniet?</p>
+</body>
+</html>
